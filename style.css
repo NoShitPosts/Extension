@@ -1,0 +1,46 @@
+.noshit-blocked {
+	transition: all 0.3 ease-in;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(255, 255, 255, 1);
+	display:block;
+	transition: all 0.3s ease-in;
+	position: absolute;
+	z-index: 9999;
+}
+
+.noshit-blocked span {
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -100%);
+}
+
+.noshit-blocked a {
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 0%);
+}
+
+.noshit-blocked img {
+	width: 100%;
+	height: auto;
+}
+
+.noshit-blocked:hover {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	opacity: 1;
+	background: rgba(255, 255, 255, 0.5) !important;
+}
+
+.noshit-blocked:hover span{
+	opacity: 0;
+}

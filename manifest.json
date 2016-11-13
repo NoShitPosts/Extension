@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "No Shitposts",
+    "description": "This extension replaces negative posts with cute items",
+    "version": "1.0",
+    "browser_action": {
+        "default_title": "Make this page red",
+		"default_icon": "icon.jpg"
+    },
+	"content_scripts": [
+	    {
+	      "matches": ["*://*.facebook.com/*"],
+		  "css": ["style.css"],
+	      "js": ["jquery-3.1.1.min.js", "content.js"],
+	      "run_at": "document_end"
+	    }
+	],
+	"content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
